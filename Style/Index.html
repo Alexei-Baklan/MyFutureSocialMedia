@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title class = "unit">MySupport</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="../Image/IconWebSite/MainIcon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility" />
+</head>
+<body>
+    <img class="logo" src="../Image/Uk/MySupport.png" alt="" >
+    <div class="myLang">
+        <div class="MenuLang">
+            <select id="Lang" class="Lang" name="Lang">
+                <option class = "en" value="en">EN </option>
+                <option class = "de" value="de">DE</option>
+                <option class = "fr" value="fr">FR</option>
+                <option class = "jp" value="jp">JP</option>
+                <option class = "kr" value="kr">KR</option>
+                <option class = "ch" value="ch">CH</option>
+                <option class = "ua" value="ua">UA </option>
+                <option class = "es" value="es">ES</option>
+                <option class = "pt" value="pt">PT</option>
+                <option class = "it" value="it">IT</option>
+            </select>
+        </div>
+    </div>
+    <article class = "container">
+            <div class = "header">
+                <section class = "block_item block-item">
+                    <h2 class = "title lng-title">Have you account ?</h2>
+                    <button class="block_button lng-sign-inl sign-in sign-inl lang">Sign in</button>
+                </section>
+                <section class = "block_item block-item">
+                    <h2 class = "title lng-titler lang">you dont have account ?</h2>
+                    <button class="block_button lng-log-in log-in lang">Join us</button>
+                </section>
+            </div>
+            <div class = "form-box">
+                <form action="#" class="form form-signin" onsubmit="goToHome(); return false;">
+                    <h3 class = "form-title lng-sign-inl sign-in  sign-inl lang">Sign In</h3>
+
+                    <p>
+                        <input type="email" class = "form-input lng-email lang" placeholder="Email" required>
+                    </p>
+                    <p>
+                        <input type="password" class = "form-input lng-pass lang" placeholder="Password" required>
+                    </p>
+                    <p>
+                        <input type="submit" class = "form-btn lng-sign-inl sign-inl lang" value="Sign In" >
+                    </p>
+                    <script>
+                        function goToHome() {
+                            window.open("../Home/Style/index.html");
+                        }
+                    </script>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="form-forgot lang">Forgot your password?</a>
+                    </p>
+                </form>
+                <form action="#" class="form form-signup">
+                    <h3 class = "form-title lng-Sign-up lang">Sign up</h3>
+                    <p>
+                        <input type="text" class = "form-input lng-Name lang" placeholder="Name" required>
+                    </p>
+                    <p>
+                        <input type="text" class = "form-input lng-Last-Name lang" placeholder="Last Name" required>
+                    </p>
+
+                    <p>
+                        <input type="email" class = "form-input lng-email lang" placeholder="Email" required>
+                    </p>
+                    <p>
+                        <input type="password" class = "form-input lng-pass lang" placeholder="Password" required>
+                    </p>
+                    <p>
+                        <input type="password" class = "form-input lng-Repeat-Password lang" placeholder="Repeat Password" required>
+                    </p>
+                    <p>
+                        <input type="text" class = "form-input lng-Your-gender lang" placeholder="Your gender">
+                    </p>
+                    <p>
+                        <button class = "form-btn lng-Sign-up form-btn-signup lang">Sign up</button>
+                    </p>
+                </form>
+            </div>
+    </article>
+<!--    <script src="../Script/lang.js"></script>-->
+    <script src="../Script/Script.js"></script>
+</body>
+</html>
+
